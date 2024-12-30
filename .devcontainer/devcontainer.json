@@ -1,0 +1,13 @@
+{
+  "name": "Report Sender Settings Importer",
+  "image": "mcr.microsoft.com/devcontainers/rust:latest",
+  "customizations": {
+    "jetbrains": {
+      "backend": "RustRover"
+    }
+  },
+  "runArgs": [
+    "--env-file", "${localWorkspaceFolder}/.devcontainer/SecretBlob.env",
+    "--network", "host"
+  ]
+}
